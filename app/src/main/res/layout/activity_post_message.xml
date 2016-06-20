@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".PostTopicActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawerLayout"
+        android:layout_height="match_parent">
+
+        <!-- Activity View -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F44336"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topic_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <ImageView android:id="@+id/post_msg_image_view"
+                       android:layout_weight="1"
+                       android:layout_gravity="center_horizontal"
+                       android:padding="4dp"
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent"
+                       android:src="@drawable/logo"/>
+
+
+            <EditText android:id="@+id/msg_title_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/post_title"
+                android:singleLine="true" />
+
+            <EditText android:id="@+id/msg_description_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_text"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button android:id="@+id/take_picture_button"
+                        android:text="@string/camera_button_text"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="#000"/>
+
+                <Button android:id="@+id/post_message_button"
+                        android:text="@string/post_message_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Navigation Drawer -->
+        <RelativeLayout
+            android:layout_gravity="left|start"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/nav_menu_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#eee"
+                android:background="#000"
+                android:dividerHeight="1dp" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Generated Strings -->
+    <string name="app_name">Topic Places</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Navigation Menu Drawer Strings -->
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="dashboardNavMenu">Dashboard</string>
+    <string name="privateTopicsNavMenu">Private Topics</string>
+    <string name="publicTopicsNavMenu">Public Topics</string>
+    <string name="postNewTopicNavMenu">Post New Topic</string>
+
+    <!-- Toolbar Titles Strings -->
+    <string name="toolbarDashboardTitle">Dashboard</string>
+    <string name="toolbarPrivateTopicsTitle">Private Topics</string>
+    <string name="toolbarPublicTopicsTitle">Public Topics</string>
+    <string name="toolbarPostTopicTitle">Post Topic</string>
+    <string name="toolbarMessagesTitle">Message</string>
+
+    <!-- Button Strings -->
+    <string name="new_topic_button">Post New Topic</string>
+    <string name="new_message_button">Post New Message</string>
+
+    <string name="title_activity_topics">Topics</string>
+
+    <string name="temp">Nav menu listener working</string>
+    <string name="title_activity_messages">Messages</string>
+    <string name="title_activity_view_message">View Message</string>
+
+    <!-- Post Topic Strings -->
+    <string name="title_activity_post_topic">Post Topic</string>
+    <string name="post_title">Title:</string>
+    <string name="default_topic_input">Enter Here</string>
+    <string name="prompt_text">Message:</string>
+    <string name="public_button">Public</string>
+    <string name="private_button">Private</string>
+    <string name="camera_button_text">Take Picture</string>
+    <string name="post_topic_button">Post Topic</string>
+    <string name="photo_description">Photo Description</string>
+    <string name="camera_failure">Camera Error. Try Again</string>
+    <string name="title_activity_post_message">Post Message</string>
+
+    <string name="post_message_button">Post Message</string>
+    <string name="toolbarPostMessageTitle">Post Message</string>
+    <string name="title_activity_view_options">ViewOptionsActivity</string>
+
+    <string name="text_view_options">Options</string>
+    <string name="edit_button">Edit</string>
+    <string name="title_activity_view_attributes">ViewAttributesActivity</string>
+
+    <string name="toolbarViewOptionsTitle">Options</string>
+    <string name="toolbarViewAttributesTitle">Attributes</string>
+
+</resources>
