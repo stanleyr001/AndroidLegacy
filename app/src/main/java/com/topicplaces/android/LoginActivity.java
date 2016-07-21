@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 user = username.getText().toString();
                 pass = password.getText().toString();
                 String endPoint = "http://tse.topicplaces.com/api/2/";
-                SNSController loginController = new SNSController(endPoint);
+                AndroidSNSController loginController = new AndroidSNSController(endPoint);
 
                 ConnectivityManager cm =
                         (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -80,7 +80,7 @@ public class LoginActivity extends AppCompatActivity {
                     String inputUsername = username.getText().toString();
                     String inputPassword = password.getText().toString();
                     String endPoint = "http://tse.topicplaces.com/api/2/";
-                    SNSController loginController = new SNSController(endPoint);
+                    AndroidSNSController loginController = new AndroidSNSController(endPoint);
 
                     ConnectivityManager cm =
                             (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);

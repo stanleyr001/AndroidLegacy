@@ -122,7 +122,7 @@ public class TopicsActivity extends AppCompatActivity {
              * one. Verifies the provided username and obtains its corresponding "u-[id]".
              */
             String endPoint = "http://tse.topicplaces.com/api/2/";
-            SNSController topicsController = new SNSController(endPoint);
+            AndroidSNSController topicsController = new AndroidSNSController(endPoint);
             String verifiedUserID = topicsController.verifyUsername(user);
 
             /*

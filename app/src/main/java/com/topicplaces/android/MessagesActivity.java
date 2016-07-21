@@ -5,12 +5,11 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Message;
+import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -60,7 +59,7 @@ public class MessagesActivity extends AppCompatActivity {
         pass = topics.getExtras().getString("password");
 
         String endPoint = "http://tse.topicplaces.com/api/2/";
-        SNSController messagesController = new SNSController(endPoint);
+        AndroidSNSController messagesController = new AndroidSNSController(endPoint);
         String authKey = messagesController.acquireKey(user, pass);
         String topicTitle = messagesController.getTopicTitle(TID, isPrivate, authKey);
         Log.d("TOPIC TITLE", messagesController.getTopicTitle(TID, isPrivate, authKey));

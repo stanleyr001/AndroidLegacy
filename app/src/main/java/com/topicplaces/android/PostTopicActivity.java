@@ -135,7 +135,7 @@ public class PostTopicActivity extends AppCompatActivity {
             if (networkInfo != null && networkInfo.isConnected()) {
 
                 String endPoint = "http://tse.topicplaces.com/api/2/";
-                SNSController topicsController = new SNSController(endPoint);
+                AndroidSNSController topicsController = new AndroidSNSController(endPoint);
                 String authKey = topicsController.acquireKey(user, pass);
 
                 isPrivate = privateCheckBox.isChecked();

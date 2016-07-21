@@ -85,7 +85,7 @@ public class ViewOptionsActivity extends AppCompatActivity {
             String password = "Android";
             String endPoint = "http://tse.topicplaces.com/api/2/";
 
-            SNSController topicsController = new SNSController(endPoint);
+            AndroidSNSController topicsController = new AndroidSNSController(endPoint);
             String verifiedUserID = topicsController.verifyUsername(user);
             String authKey = topicsController.acquireKey(user, password);
 

@@ -96,7 +96,7 @@ public class PostMessageActivity extends AppCompatActivity {
                 if (networkInfo != null && networkInfo.isConnected()) {
 
                     String endPoint = "http://tse.topicplaces.com/api/2/";
-                    SNSController msgController = new SNSController(endPoint);
+                    AndroidSNSController msgController = new AndroidSNSController(endPoint);
                     String authKey = msgController.acquireKey(user, pass);
 
                     String title = msgTitle.getText().toString();
